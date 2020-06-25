@@ -6,28 +6,19 @@ dotfiles="$HOME/dotfiles"
 
 # Edit the files in here depending on what files you have in your repo
 Main() {
-  Install "hushlogin"
-  Install "welcome"
-  Install "ackrc"
-  Install "dircolors"
   Install "zshenv"
   Install "zshrc"
   Install "vimrc"
   Install "bashrc"
-  Install "tmux.conf"
-  Install "inputrc"
   Install "gitignore"
   # Run commands based on OS
   case "$(uname)" in
     Darwin) # Mac
       local app_support="$HOME/Library/Application Support"
       local vscode="$app_support/Code/User"
-      local aseprite="$app_support/Aseprite"
-      Install "hammerspoon"
       InstallAs "vscode/keybindings.json" "$vscode/keybindings.json"
       InstallAs "vscode/settings.json" "$vscode/settings.json"
       InstallAs "vscode/snippets" "$vscode/snippets"
-      InstallAs "aseprite-scripts" "$aseprite/scripts"
       ;;
   esac
 }
