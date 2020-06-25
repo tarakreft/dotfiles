@@ -1,0 +1,8 @@
+[user]
+  name = Brian Mock
+  email = brian@mockbrian.com
+[push]
+  default = current
+[core]
+  excludesfile = ~/.gitignore
+	autocrlf = false

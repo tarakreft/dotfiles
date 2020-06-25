@@ -1,0 +1,95 @@
+[
+  {
+    "key": "alt+cmd+i",
+    "command": "workbench.action.toggleDevTools",
+    "when": "isMac && editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "workbench.action.toggleDevTools",
+    "when": "!isMac && editorTextFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "workbench.action.openGlobalSettings",
+    "when": "!isMac && editorTextFocus"
+  },
+  {
+    "key": "cmd+k cmd+f",
+    "command": "editor.action.formatDocument",
+    "when": "isMac && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+f",
+    "command": "editor.action.formatDocument",
+    "when": "!isMac && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+k cmd+z",
+    "command": "editor.action.toggleWordWrap",
+    "when": "isMac && editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+z",
+    "command": "editor.action.toggleWordWrap",
+    "when": "!isMac && editorTextFocus"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "workbench.action.reloadWindow",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "editor.action.fontZoomIn",
+    "when": "!isMac && editorTextFocus"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.action.fontZoomOut",
+    "when": "!isMac && editorTextFocus"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "editor.action.fontZoomReset",
+    "when": "!isMac && editorTextFocus"
+  },
+  {
+    "key": "cmd+=",
+    "command": "editor.action.fontZoomIn",
+    "when": "isMac && editorTextFocus"
+  },
+  {
+    "key": "cmd+-",
+    "command": "editor.action.fontZoomOut",
+    "when": "isMac && editorTextFocus"
+  },
+  {
+    "key": "cmd+0",
+    "command": "editor.action.fontZoomReset",
+    "when": "isMac && editorTextFocus"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.terminal.toggleTerminal"
+  }
+]
